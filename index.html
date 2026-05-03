@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Catch-Up Plan</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&family=DM+Mono:wght@400;500&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+  <div class="hero">
+    <div class="hero-tag">📋 Catch-Up Plan</div>
+    <h1>Your <span>CSS</span> Journey<br>Starts Here</h1>
+    <p>You already know HTML — that's your foundation. This plan gets you caught up on CSS in 5 weeks, one solid concept at a time.</p>
+  </div>
+
+  <div class="overview">
+    <div class="overview-card">
+      <div class="overview-num">5</div>
+      <div class="overview-label">Weeks</div>
+    </div>
+    <div class="overview-card">
+      <div class="overview-num">~1hr</div>
+      <div class="overview-label">Per day</div>
+    </div>
+    <div class="overview-card">
+      <div class="overview-num">Build</div>
+      <div class="overview-label">As you learn</div>
+    </div>
+  </div>
+
+  <!-- WEEK 1 -->
+  <div class="week-card w1 open">
+    <div class="week-header" onclick="toggleWeek(this)">
+      <div class="week-badge">1</div>
+      <div class="week-title-block">
+        <div class="week-num">WEEK ONE</div>
+        <div class="week-title">How CSS Works + The Box Model</div>
+      </div>
+      <div class="week-chevron">▼</div>
+    </div>
+    <div class="week-body">
+      <div class="week-intro">This week is about the fundamentals. Understand how CSS connects to HTML, and master the Box Model — the single most important concept in CSS layout.</div>
+      <div class="topics">
+        <div class="topic-row">
+          <div class="topic-day">Day 1</div>
+          <div class="topic-content">
+            <div class="topic-name">What is CSS & how to link it</div>
+            <div class="topic-detail">Inline, internal &lt;style&gt;, and external .css file. Always use external files.</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-day">Day 2</div>
+          <div class="topic-content">
+            <div class="topic-name">Selectors — targeting HTML elements</div>
+            <div class="topic-detail">Tag selectors (h1), class (.card), ID (#header), and combining them.</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-day">Day 3</div>
+          <div class="topic-content">
+            <div class="topic-name">The Box Model</div>
+            <div class="topic-detail">Every element is a box: content → padding → border → margin. Draw it on paper first.</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-day">Day 4</div>
+          <div class="topic-content">
+            <div class="topic-name">Colors & Typography</div>
+            <div class="topic-detail">color, background-color, font-size, font-family, font-weight, line-height.</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-day">Day 5</div>
+          <div class="topic-content">
+            <div class="topic-name">Practice Day — Style your HTML project</div>
+            <div class="topic-detail">Take any HTML page you already built and add CSS to it. Don't start from scratch.</div>
+          </div>
+        </div>
+      </div>
+      <div class="week-tip"><strong>💡 Key tip:</strong> Open your browser DevTools (F12) and try changing CSS live. It's the fastest way to understand what each property does.</div>
+    </div>
+  </div>
+
+  <!-- WEEK 2 -->
+  <div class="week-card w2">
+    <div class="week-header" onclick="toggleWeek(this)">
+      <div class="week-badge">2</div>
+      <div class="week-title-block">
+        <div class="week-num">WEEK TWO</div>
+        <div class="week-title">Display, Positioning & Units</div>
+      </div>
+      <div class="week-chevron">▼</div>
+    </div>
+    <div class="week-body">
+      <div class="week-intro">This week explains how elements sit on the page and how to control where they go. Many beginners skip this and struggle with layout — don't.</div>
+      <div class="topics">
+        <div class="topic-row">
+          <div class="topic-day">Day 1</div>
+          <div class="topic-content">
+            <div class="topic-name">display: block vs inline vs inline-block</div>
+            <div class="topic-detail">Why does &lt;div&gt; take a full row but &lt;span&gt; doesn't? This is why.</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-day">Day 2</div>
+          <div class="topic-content">
+            <div class="topic-name">Width, height & overflow</div>
+            <div class="topic-detail">Setting sizes, min/max-width, and what happens when content overflows.</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-day">Day 3</div>
+          <div class="topic-content">
+            <div class="topic-name">CSS Units — px, %, rem, em, vh/vw</div>
+            <div class="topic-detail">Use px for borders, rem for font sizes, % for widths. Understand the difference.</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-day">Day 4</div>
+          <div class="topic-content">
+            <div class="topic-name">position: static, relative, absolute, fixed</div>
+            <div class="topic-detail">The most misunderstood topic in CSS. Take it slow — draw diagrams.</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-day">Day 5</div>
+          <div class="topic-content">
+            <div class="topic-name">Practice — Build a simple card component</div>
+            <div class="topic-detail">A profile card with an image, name, and button — positioned and sized correctly.</div>
+          </div>
+        </div>
+      </div>
+      <div class="week-tip"><strong>💡 Key tip:</strong> <code>position: absolute</code> is relative to the nearest parent with <code>position: relative</code>. Always set that parent, or things will go wild.</div>
+    </div>
+  </div>
+
+  <!-- WEEK 3 -->
+  <div class="week-card w3">
+    <div class="week-header" onclick="toggleWeek(this)">
+      <div class="week-badge">3</div>
+      <div class="week-title-block">
+        <div class="week-num">WEEK THREE</div>
+        <div class="week-title">Flexbox — 1D Layouts</div>
+      </div>
+      <div class="week-chevron">▼</div>
+    </div>
+    <div class="week-body">
+      <div class="week-intro">Flexbox changed CSS forever. It makes aligning and distributing items in a row or column simple. You'll use this every single day as a developer.</div>
+      <div class="topics">
+        <div class="topic-row">
+          <div class="topic-day">Day 1</div>
+          <div class="topic-content">
+            <div class="topic-name">display: flex + flex-direction</div>
+            <div class="topic-detail">Turn any container into a flex container. Understand main axis vs cross axis.</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-day">Day 2</div>
+          <div class="topic-content">
+            <div class="topic-name">justify-content & align-items</div>
+            <div class="topic-detail">The two most used flex properties. Master these and you can build most layouts.</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-day">Day 3</div>
+          <div class="topic-content">
+            <div class="topic-name">flex-wrap, gap, flex-grow</div>
+            <div class="topic-detail">How items wrap and how to control spacing and stretching.</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-day">Day 4</div>
+          <div class="topic-content">
+            <div class="topic-name">Item properties — align-self, order, flex</div>
+            <div class="topic-detail">Override the container's rules for individual items.</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-day">Day 5</div>
+          <div class="topic-content">
+            <div class="topic-name">Practice — Build a navbar + card row</div>
+            <div class="topic-detail">A navbar with logo left + links right, and a row of 3 equal cards below.</div>
+          </div>
+        </div>
+      </div>
+      <div class="week-tip"><strong>💡 Key tip:</strong> Flexbox is one-dimensional — it works in one direction at a time (row OR column). For two-dimensional layouts, that's what Grid is for (next week).</div>
+    </div>
+  </div>
+
+  <!-- WEEK 4 -->
+  <div class="week-card w4">
+    <div class="week-header" onclick="toggleWeek(this)">
+      <div class="week-badge">4</div>
+      <div class="week-title-block">
+        <div class="week-num">WEEK FOUR</div>
+        <div class="week-title">CSS Grid — 2D Layouts</div>
+      </div>
+      <div class="week-chevron">▼</div>
+    </div>
+    <div class="week-body">
+      <div class="week-intro">Grid lets you control rows AND columns at the same time. It's ideal for page layouts, image galleries, and dashboards. It feels hard at first — that's normal.</div>
+      <div class="topics">
+        <div class="topic-row">
+          <div class="topic-day">Day 1</div>
+          <div class="topic-content">
+            <div class="topic-name">display: grid + grid-template-columns</div>
+            <div class="topic-detail">The <code>fr</code> unit and <code>repeat()</code> function. Start here.</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-day">Day 2</div>
+          <div class="topic-content">
+            <div class="topic-name">gap, rows, and auto placement</div>
+            <div class="topic-detail">Grid places items automatically — learn how to control that.</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-day">Day 3</div>
+          <div class="topic-content">
+            <div class="topic-name">grid-column & grid-row spanning</div>
+            <div class="topic-detail">Make items span multiple columns or rows using line numbers.</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-day">Day 4</div>
+          <div class="topic-content">
+            <div class="topic-name">grid-template-areas</div>
+            <div class="topic-detail">Name regions of your grid in CSS. Great for page layouts (header, sidebar, main, footer).</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-day">Day 5</div>
+          <div class="topic-content">
+            <div class="topic-name">Practice — Full page layout</div>
+            <div class="topic-detail">Header + sidebar + main content + footer using grid-template-areas.</div>
+          </div>
+        </div>
+      </div>
+      <div class="week-tip"><strong>💡 Key tip:</strong> Use <code>repeat(auto-fill, minmax(200px, 1fr))</code> to make a responsive grid that wraps automatically — no media queries needed!</div>
+    </div>
+  </div>
+
+  <!-- WEEK 5 -->
+  <div class="week-card w5">
+    <div class="week-header" onclick="toggleWeek(this)">
+      <div class="week-badge">5</div>
+      <div class="week-title-block">
+        <div class="week-num">WEEK FIVE</div>
+        <div class="week-title">Responsive Design & Finishing Touches</div>
+      </div>
+      <div class="week-chevron">▼</div>
+    </div>
+    <div class="week-body">
+      <div class="week-intro">Make your pages look good on all screen sizes. Then add polish — transitions, hover effects, and CSS variables — to make your work look professional.</div>
+      <div class="topics">
+        <div class="topic-row">
+          <div class="topic-day">Day 1</div>
+          <div class="topic-content">
+            <div class="topic-name">Media queries</div>
+            <div class="topic-detail"><code>@media (max-width: 768px) { ... }</code> — change styles for smaller screens.</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-day">Day 2</div>
+          <div class="topic-content">
+            <div class="topic-name">Mobile-first approach</div>
+            <div class="topic-detail">Design for small screens first, then add styles for larger screens. Industry standard.</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-day">Day 3</div>
+          <div class="topic-content">
+            <div class="topic-name">CSS Variables (custom properties)</div>
+            <div class="topic-detail"><code>--primary-color: #d4622a;</code> — define once, use everywhere. Easy to change later.</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-day">Day 4</div>
+          <div class="topic-content">
+            <div class="topic-name">Transitions & hover effects</div>
+            <div class="topic-detail"><code>transition: all 0.3s ease;</code> on buttons and links makes everything feel alive.</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-day">Day 5</div>
+          <div class="topic-content">
+            <div class="topic-name">Final project — Fully styled, responsive webpage</div>
+            <div class="topic-detail">Take your HTML project from Week 1 and make it fully responsive and polished.</div>
+          </div>
+        </div>
+      </div>
+      <div class="week-tip"><strong>💡 Key tip:</strong> Always test your page by resizing the browser window. If it breaks, that's a bug to fix — not a coincidence to ignore.</div>
+    </div>
+  </div>
+
+  <!-- MINDSET -->
+  <div class="mindset">
+    <h2>🧠 Mindset for Catching Up</h2>
+    <div class="mindset-list">
+      <div class="mindset-item">
+        <div class="mindset-icon">⏱️</div>
+        <div class="mindset-text"><strong>45 mins beats 3 hours.</strong> Short focused sessions work better than long exhausting ones. Consistency matters more than intensity.</div>
+      </div>
+      <div class="mindset-item">
+        <div class="mindset-icon">🏗️</div>
+        <div class="mindset-text"><strong>Build things, don't just read.</strong> CSS only makes sense when you're writing it and seeing results. Every day should end with something you made.</div>
+      </div>
+      <div class="mindset-item">
+        <div class="mindset-icon">🐛</div>
+        <div class="mindset-text"><strong>Broken code is normal.</strong> Every developer fights CSS bugs daily. Getting stuck doesn't mean you're bad at it — it means you're learning.</div>
+      </div>
+      <div class="mindset-item">
+        <div class="mindset-icon">🔍</div>
+        <div class="mindset-text"><strong>Use DevTools constantly.</strong> Right-click → Inspect on any webpage. Change styles live. This is how professionals learn and debug.</div>
+      </div>
+      <div class="mindset-item">
+        <div class="mindset-icon">🎯</div>
+        <div class="mindset-text"><strong>You're not behind — you're on your own path.</strong> Missing classes doesn't mean missing out. This plan gets you there at your own pace.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESOURCES -->
+  <div class="resources">
+    <h2>📚 Recommended Resources</h2>
+    <div class="resource-list">
+      <div class="resource-item">
+        <span class="resource-tag tag-free">FREE</span>
+        <div>
+          <div class="resource-name">MDN Web Docs — CSS</div>
+          <div class="resource-desc">developer.mozilla.org — The official reference. Use it to look up any property.</div>
+        </div>
+      </div>
+      <div class="resource-item">
+        <span class="resource-tag tag-practice">PRACTICE</span>
+        <div>
+          <div class="resource-name">CSS Diner</div>
+          <div class="resource-desc">flukeout.github.io — A game to learn CSS selectors. Fun and effective.</div>
+        </div>
+      </div>
+      <div class="resource-item">
+        <span class="resource-tag tag-practice">PRACTICE</span>
+        <div>
+          <div class="resource-name">Flexbox Froggy</div>
+          <div class="resource-desc">flexboxfroggy.com — Learn Flexbox by moving frogs. Genuinely great.</div>
+        </div>
+      </div>
+      <div class="resource-item">
+        <span class="resource-tag tag-practice">PRACTICE</span>
+        <div>
+          <div class="resource-name">Grid Garden</div>
+          <div class="resource-desc">cssgridgarden.com — Learn Grid by watering a garden. Same format as Froggy.</div>
+        </div>
+      </div>
+      <div class="resource-item">
+        <span class="resource-tag tag-reference">REFERENCE</span>
+        <div>
+          <div class="resource-name">CSS-Tricks: A Complete Guide to Flexbox/Grid</div>
+          <div class="resource-desc">css-tricks.com — The best visual cheat sheets for Flexbox and Grid. Bookmark both.</div>
+        </div>
+      </div>
+      <div class="resource-item">
+        <span class="resource-tag tag-free">FREE</span>
+        <div>
+          <div class="resource-name">freeCodeCamp — Responsive Web Design</div>
+          <div class="resource-desc">freecodecamp.org — Free structured course with projects and a certificate.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function toggleWeek(header) {
+    const card = header.parentElement;
+    card.classList.toggle('open');
+  }
+</script>
+</body>
+</html>
+
