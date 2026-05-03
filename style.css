@@ -14,11 +14,14 @@
   }
 
   body {
-    background: var(--cream);
-    color: var(--ink);
-    font-family: 'Nunito', sans-serif;
-    min-height: 100vh;
-    padding: 2rem 1rem 4rem;
+  color: var(--ink);
+  font-family: 'Nunito', sans-serif;
+  min-height: 100vh;
+  padding: 2rem 1rem 4rem;
+  background-image: url('logo-black-and-white.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   }
 
   .page {
@@ -30,7 +33,10 @@
   .hero {
     text-align: center;
     padding: 3rem 2rem 2.5rem;
-    background: var(--ink);
+    background-image: url('logo-black-and-white.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 20px;
     margin-bottom: 2rem;
     position: relative;
