@@ -18,7 +18,7 @@
   font-family: 'Nunito', sans-serif;
   min-height: 100vh;
   padding: 2rem 1rem 4rem;
-  background-image: url('logo-black-and-white.png');
+  background-image: url('Logo-black-and-white.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,6 +30,10 @@
   }
 
   /* HEADER */
+  img {
+    width: 150px;
+    padding: 40px;
+  }
   .hero {
     text-align: center;
     padding: 3rem 2rem 2.5rem;
