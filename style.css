@@ -350,6 +350,16 @@
   .tag-practice { background: #fef0e8; color: #d4622a; }
   .tag-reference { background: #eef4fd; color: #2a7dd4; }
 
-  .resource-name { font-weight: 700; color: var(--ink); }
+  .resource-name { 
+      font-weight: 700; color: var(--ink); 
+  }
   .resource-desc { color: var(--muted); font-size: 0.8rem; }
+.resource-name a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.resource-name a:hover {
+  color: var(--accent);
+}
 
