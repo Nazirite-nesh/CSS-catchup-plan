@@ -33,19 +33,21 @@
   /* HEADER */
   
   .hero {
-    text-align: center;
-    padding: 3rem 2rem 2.5rem;
     background-image: url('logo-black-and-white.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
+    padding: 3rem 2rem 2.5rem;
     border-radius: 20px;
     margin-bottom: 2rem;
     position: relative;
     overflow: hidden;
    img {
     width: 150px;
-    padding: 40px;
+    border-radius: 40px;
+    display: block;
+    margin: 0 auto 1rem;
    }
   }
 
